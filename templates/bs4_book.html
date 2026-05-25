@@ -92,15 +92,15 @@
 
     <div id="main-nav" class="collapse-lg">
       <form role="search">
-        <input id="search" class="form-control" type="search" placeholder="Procurar" aria-label="Procurar">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
       </form>
 
-      <nav aria-label="Sumário">
-        <h2><b>Sumário</b></h2>
+      <nav aria-label="Table of Contents">
+        <h2><b>Table of Contents</b></h2>
         <div id="book-toc"></div>
 
         <div class="book-extra">
-          <p><a id="book-repo" href="#">Ver código fonte <i class="fab fa-github"></i></a></li></p>
+          <p><a id="book-repo" href="#">Source code <i class="fab fa-github"></i></a></li></p>
         </div>
       </nav>
     </div>
@@ -120,14 +120,14 @@ $endfor$
   </main>
 
   <div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="Nesta página">
-      <h2><b>Nesta página</b></h2>
+    <nav id="toc" data-toggle="toc" aria-label="On this page">
+      <h2><b>On this page</b></h2>
       <div id="book-on-this-page"></div>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-          <li><a id="book-source" href="#">Ver fonte <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="#">Editar esta página <i class="fab fa-github"></i></a></li>
+          <li><a id="book-source" href="#">Source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="#">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
       </div>
     </nav>
@@ -140,11 +140,11 @@ $endfor$
   <div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>$title$</strong>$if(subtitle)$: $subtitle$$endif$" foi escrito por $for(author)$$author$$sep$, $endfor$. $if(date)$Última atualização $date$.$endif$</p>
+    <p>"<strong>$title$</strong>$if(subtitle)$: $subtitle$$endif$" was written by $for(author)$$author$$sep$, $endfor$. $if(date)$Last updated $date$.$endif$</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
-    <p>Este livro foi compilado com o pacote R <a class="text-light" href="https://bookdown.org">bookdown</a>.</p>
+    <p>This book was compiled using the R package <a class="text-light" href="https://bookdown.org">bookdown</a>.</p>
   </div>
 
 </div></div>

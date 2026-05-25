@@ -1,0 +1,214 @@
+# Glossary {-}
+
+In this glossary, we summarize the main concepts and definitions of terms used in the main text that may be unknown or unclear to some readers.
+
+- **Abundance-based Coverage Estimator (ACE)**: species richness estimator based on the abundance of rare species  
+- **Aggregation (raster)**: increases pixel size (decreasing resolution) of a raster by aggregating pixel values into a larger pixel  
+- **Phylogenetic clustering**: species coexisting in communities are more closely related than expected by chance  
+- **Alignment (raster)**: adjusts pixel size, extent, number, and origin of pixels across multiple raster layers  
+- **Environment (RStudio)**: the area where created objects are stored  
+- **Sample**: subset of the population selected through an appropriate sampling process, used to estimate characteristics of the entire population  
+- **Analysis of covariance (ANCOVA)**: extension of ANOVA including a covariate measured in all sampling units  
+- **Analysis of variance (ANOVA)**: statistical test evaluating whether there are differences among means of three or more independent groups. Various experimental designs exist—one-way ANOVA, two-way ANOVA, randomized block ANOVA, repeated measures ANOVA, and split-plot ANOVA—differing in how test statistics and degrees of freedom are calculated  
+- **Parametric analysis**: assumes data come from a known distribution (e.g., Gaussian, Poisson) and estimates its parameters (e.g., mean, standard deviation)  
+- **Nonparametric analysis**: does not assume a known distribution for the data  
+- **Array**: class of objects representing elements of a single mode in table combinations with rows, columns, and dimensions  
+- **Phylogenetic tree**: hypotheses representing relationships among species (or individuals, genes, etc.), including shared ancestry and separation distances (time, genetic, or trait differences)  
+- **Functional trait**: measurable organism property (usually at the individual level) representing morphological, physiological, or phenological characteristics affecting fitness  
+- **Object attributes**: the mode (nature) and structure (organization) of elements within objects  
+- **Eigenvalue**: scalar that multiplies a vector; represents variance along axes and, when standardized, the proportion of variance explained  
+- **Eigenvector**: nonzero vector that changes only by scalar multiplication; associated with eigenvalues in matrix operations  
+- **Block (ANOVA)**: area or time period with relatively homogeneous environmental conditions, used to control unwanted variation  
+- **Bootstrap**: species richness estimator using resampling to estimate population parameters  
+- **Buffer (vector)**: polygon representing an area within a specified distance from a vector feature (point, line, or polygon)  
+- **Layer (vector or raster)**: general term, often referring to multiple rasters within a single file  
+- **Centroid (vector or raster)**: central point of a feature or raster pixel center  
+- **Centroid (multivariate)**: weighted mean of a multivariate set, minimizing average distance among objects  
+- **Chao 1**: species richness estimator based on abundance of singletons and doubletons  
+- **Chao 2**: species richness estimator based on incidence (presence/absence) of singletons and doubletons  
+- **Clade**: group of related species descending from a single node  
+- **Correlation coefficient**: indicates strength of linear relationship between two variables  
+- **Coercion (R language)**: transformation of element modes following hierarchy: character > double > integer > logical  
+- **Linear combination**: combination of variables multiplied by constants (e.g., ax + by + cz)  
+- **Community Mean Nearest Taxon Distance (COMDISTNT)**: beta diversity metric based on mean nearest phylogenetic/functional distances  
+- **Community Mean Pairwise Distance (COMDIST)**: beta diversity metric based on mean pairwise phylogenetic/functional distances  
+- **Console (RStudio)**: where R code is executed  
+- **Conversion (R language)**: transformation of object modes or structure via functions  
+- **Raster-vector conversion**: transforming vectors into rasters (rasterization) or rasters into vectors (vectorization)  
+- **Convex Hull**: multivariate measure calculating attribute space occupied by species or communities  
+- **Correlation**: statistical test measuring strength of linear relationship between two continuous variables  
+- **Raster cropping and masking**: reduces raster extent based on an area of interest  
+- **Covariate**: continuous variable affecting the response but not controlled by the researcher  
+- **Akaike Information Criterion (AIC)**: model selection metric balancing goodness of fit and model complexity  
+- **Dominance curve**: see Whittaker diagram  
+- **Geospatial data**: georeferenced data expressing spatial information (vector or raster)  
+- **Raster data**: matrix of equally spaced cells (pixels)  
+- **Tidy data**: organized data where variables are columns, observations are rows, and values are cells  
+- **Vector data**: geometric representations (points, lines, polygons) linked to attribute tables  
+- **Data frame**: table-like object with rows and columns, allowing multiple data types  
+- **Data Science**: interdisciplinary field dealing with large-scale data analysis  
+- **Datum**: relationship between coordinate system and Earth’s surface  
+- **Dendrogram**: hierarchical diagram representing similarity among elements  
+- **Disaggregation (raster)**: increases resolution by reducing pixel size and interpolating values  
+- **Deviance**: measure of model fit; lower values indicate better fit  
+- **Whittaker diagram**: plots ranked species abundance on a logarithmic scale  
+- **Working directory**: folder path used for input/output operations in R  
+- **Phylogenetic overdispersion**: coexisting species are less related than expected by chance  
+- **Probability distribution**: function describing possible values and probabilities of a random variable  
+- **Gaussian distribution**: see normal distribution  
+- **Normal distribution**: symmetric bell-shaped distribution centered on the mean  
+- **Alpha diversity**: diversity within a habitat or sampling unit  
+- **Beta diversity**: variation in diversity among habitats or sampling units  
+- **Phylogenetic beta diversity**: metrics comparing evolutionary histories among communities  
+- **Species diversity**: number of species and their abundance distribution  
+- **Phylogenetic diversity**: measures of shared ancestry among species  
+- **Functional diversity**: variation in functional traits across ecological units  
+- **Gamma diversity**: regional diversity combining alpha and beta diversity  
+- **Doubletons**: species with abundance of two individuals  
+- **Duplicates**: species occurring in exactly two samples  
+- **Pielou’s evenness**: metric describing evenness of species abundances  
+- **Type I error**: rejecting a true null hypothesis  
+- **Type II error**: failing to reject a false null hypothesis  
+- **Scalar**: number used in matrix operations  
+- **Scores**: positions of sampling units along ordination axes  
+- **ESRI Shapefile**: standard vector format (.shp, .dbf, .shx, .prj)  
+- **Frequentist statistics**: inference based on observed frequencies  
+- **Object structure**: organization of elements into vectors, matrices, lists, etc.  
+- **Extent (vector and raster)**: geographic boundaries defined by coordinate ranges  
+- **Extraction (vector and raster)**: retrieving raster values based on vector features  
+- **Extrapolation**: estimating values beyond observed data range  
+- **Factor**: categorical variable stored as integer levels  
+- **Random factor**: levels sampled randomly from population  
+- **Fixed factor**: levels fully controlled by researcher  
+- **Variance Inflation Factor (VIF)**: quantifies multicollinearity  
+- **Feature (vector)**: spatial element corresponding to a row in attribute table  
+- **Phenomenon**: observable event or relationship  
+- **Functions**: reusable code blocks performing tasks  
+- **Generalized Least Squares (GLS)**: regression method accounting for correlated errors  
+- **GeoPackage**: geospatial database storing vector, raster, and tabular data  
+- **GeoTIFF**: raster format with embedded geospatial metadata  
+- **GitHub**: platform for version-controlled code hosting  
+- **Goodness of fit**: measure of how well a model fits data  
+- **Degrees of freedom**: number of independent values in data  
+- **Hypothesis**: testable statement derived from theory  
+- **Alternative hypothesis (H1)**: suggests differences exist beyond random variation  
+- **Null hypothesis (H0)**: suggests no differences beyond random variation  
+- **Homoscedasticity**: constant variance across predictors  
+- **Statistical independence**: events do not influence each other  
+- **Indexing (R)**: accessing elements using `[]`, `[[]]`, or `$`  
+- **Diversity index**: metric combining richness and abundance distribution  
+- **Gini-Simpson index**: probability that two individuals belong to different species  
+- **Margalef index**: richness metric adjusted by abundance  
+- **Menhinick index**: richness metric adjusted by abundance  
+- **Shannon-Wiener index**: entropy-based diversity metric  
+- **Simpson index**: probability that two individuals belong to the same species  
+- **Inf (Infinity)**: mathematical limit representing very large values  
+- **Raster-vector interaction**: operations combining raster and vector data  
+- **Interpolation**: estimating values within known range  
+- **Jackknife 1**: richness estimator based on uniques  
+- **Jackknife 2**: richness estimator based on uniques and duplicates  
+- **Table join**: merging datasets by key columns  
+- **Likelihood-ratio test (LRT)**: compares nested models  
+- **R language**: open-source statistical computing environment  
+- **List**: object class containing heterogeneous elements  
+- **Loading**: correlation between original variables and ordination axes  
+- **For loop**: repeats code block over a sequence  
+- **Map**: spatial representation of geospatial data  
+- **Animated maps**: maps showing temporal or spatial changes  
+- **Static maps**: fixed visual representations  
+- **Interactive maps**: maps allowing zooming and navigation  
+- **Matrix**: table-like object with a single data type  
+- **Maximum likelihood**: method estimating parameters maximizing likelihood  
+- **Mean Pairwise Distance (MPD)**: average phylogenetic distance among species pairs  
+- **Mean Nearest Taxon Distance (MNTD)**: average nearest-neighbor phylogenetic distance  
+- **Mechanism**: causal interaction producing a phenomenon  
+- **Object mode**: data type (integer, double, character, logical, complex)  
+- **Mixed model**: includes both fixed and random factors  
+- **Null model**: randomization-based baseline for comparison  
+- **Multicollinearity**: correlation among predictors  
+- **NA (Not Available)**: missing data  
+- **NaN (Not a Number)**: undefined mathematical result  
+- **Nearest Relative Index (NRI)**: standardized MPD metric  
+- **Nearest Taxon Index (NTI)**: standardized MNTD metric  
+- **NetCDF**: array-based scientific data format  
+- **Node**: branching point in phylogeny  
+- **Residual normality**: assumption of normally distributed residuals  
+- **NULL**: empty object  
+- **Hill numbers**: diversity expressed as effective number of species  
+- **Effective number of species**: number of equally abundant species needed to match diversity  
+- **Objects**: named data containers  
+- **Geospatial operations**: attribute, spatial, and geometric operations  
+- **Attribute operations**: changes based on non-spatial data  
+- **Spatial operations**: changes based on location/shape  
+- **Geometric operations**: geometry-based transformations  
+- **Operators**: symbols for arithmetic, logical, relational operations  
+- **Packages (R)**: collections of functions  
+- **Pattern**: recurring structure in space or time  
+- **Phylogenetic Diversity (PD)**: total branch length of a community  
+- **Phylogenetic Endemism (PE)**: branch length restricted to regions  
+- **Phylosor**: phylogenetic similarity metric  
+- **Phylogenetic Species Richness (PSR)**: richness accounting for phylogeny  
+- **Phylogenetic Species Variability (PSV)**: variability in phylogenetic structure  
+- **Pipe (%>%)**: operator chaining function outputs  
+- **Data pivoting**: reshaping between long and wide formats  
+- **Pixel (raster)**: smallest spatial unit of raster  
+- **Convex polygon**: polygon enclosing outer points  
+- **Voronoi polygon**: spatial partition based on proximity  
+- **Polytomy**: node with three or more descendants  
+- **Population**: set of individuals relevant to a question  
+- **Sample population**: accessible subset for sampling  
+- **Spatial prediction**: generating prediction rasters from models  
+- **Prediction**: expected outcome derived from theory  
+- **Assumption**: required condition for hypothesis  
+- **Map elements**: title, legend, scale bar, north arrow, CRS, etc.  
+- **Process**: sequence of events explaining a pattern  
+- **Functional programming**: organizing code into functions  
+- **RStudio project**: `.Rproj` file managing workflow  
+- **Pull request**: contribution submission in version control  
+- **Root**: common ancestor in phylogeny  
+- **Branch**: connection between nodes  
+- **Rarefaction**: standardizing species richness comparisons  
+- **Sample-based rarefaction**: standardized by number of samples  
+- **Coverage-based rarefaction**: standardized by sample completeness  
+- **Individual-based rarefaction**: standardized by abundance  
+- **Rasterization**: converting vector to raster  
+- **Regression**: modeling relationship between predictors and response  
+- **Reprojection**: transforming coordinate reference system  
+- **Residual**: difference between observed and predicted values  
+- **Resolution (raster)**: pixel size  
+- **RStudio**: IDE for R  
+- **Script (RStudio)**: `.R` file with code  
+- **Model selection**: choosing best model among candidates  
+- **Hill series**: see Hill numbers  
+- **Singleton**: species with one individual  
+- **Coordinate system**: geographic or projected system  
+- **Coordinate Reference System (CRS)**: coordinate system plus datum  
+- **Attribute table**: tabular data linked to spatial features  
+- **Terminal (tip)**: end of phylogenetic branch  
+- **Levene’s test**: tests variance homogeneity  
+- **Shapiro-Wilk test**: tests normality  
+- **Student’s t-test**: compares means between two groups  
+- **Paired t-test**: compares paired observations  
+- **Tibble**: improved data frame for tidyverse  
+- **tidyverse**: collection of R packages for data science workflow  
+- **Ultrametric**: equal distance from tips to root  
+- **Sampling unit**: individual unit measured  
+- **Unique**: species in one sample only  
+- **UniFrac**: phylogenetic dissimilarity metric  
+- **P-value**: probability under null hypothesis  
+- **Missing and special values**: NA, NaN, Inf, NULL  
+- **Variance of Pairwise Distance (VPD)**: variance in phylogenetic distances  
+- **Categorical variable**: non-numeric variable with categories  
+- **Continuous variable**: numeric variable with infinite values  
+- **Dependent variable**: response variable  
+- **Discrete variable**: countable numeric variable  
+- **Explanatory variable**: see independent variable  
+- **Independent variable**: predictor variable  
+- **Nominal variable**: unordered categories  
+- **Ordinal variable**: ordered categories  
+- **Predictor variable**: see independent variable  
+- **Response variable**: see dependent variable  
+- **Variogram**: describes spatial continuity  
+- **Vector**: one-dimensional object of same type  
+- **Vector (multivariate)**: column of a matrix  
+- **Vectorization (vector)**: converting raster to vector  

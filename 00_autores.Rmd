@@ -1,4 +1,4 @@
-# Sobre os autores {-}
+#  About the Authors {-}
 
 **Fernando Rodrigues da Silva**
 
@@ -6,7 +6,7 @@
 knitr::include_graphics(path = "img/autores_fernando.jpeg")
 ```
 
-Piadista descomedido de Barueri/SP, pai da Ária, companheiro da Winter, responsável pela Filomena (gata), Zé (gato), Cenoura (cachorra) e Chica (cachorra), admirador de botecos, viagens, mato, cerveja, poker, basquete e prosa com os amigos. Formado em Ciências Biológicas na UNESP-Assis e com mestrado e doutorado em Biologia Animal pela UNESP-São José do Rio Preto. Realizou doutorado sanduíche na SUNY – College of Environmental Science and Forest. Atualmente é Professor Associado II no Departamento de Ciências Ambientais, UFSCAR-Sorocaba e trabalha na linha de pesquisa de ecologia de comunidades, metacomunidades, macroecologia, biogeografia e história natural de anfíbios. 
+An incorrigible joker from Barueri/SP, father of Ária, partner of Winter, caretaker of Filomena (cat), Zé (cat), Cenoura (dog), and Chica (dog), and an admirer of bars, travel, nature, beer, poker, basketball, and long conversations with friends. He holds a degree in Biological Sciences from UNESP–Assis and an M.Sc. and Ph.D. in Animal Biology from UNESP–São José do Rio Preto. He completed a sandwich Ph.D. at SUNY – College of Environmental Science and Forestry. He is currently an Associate Professor II in the Department of Environmental Sciences at UFSCar–Sorocaba, working in community ecology, metacommunities, macroecology, biogeography, and the natural history of amphibians.
 
 Site: http://fernandoecologia.wix.com/fernandorodrigues
 
@@ -16,7 +16,7 @@ Site: http://fernandoecologia.wix.com/fernandorodrigues
 knitr::include_graphics(path = "img/autores_thiago.png")
 ```
 
-Capixaba de Cachoeiro do Itapemirim/ES, pai do Lucas, companheiro da Natália, praticante de Muay Thai, Boxe e da arte de provar cervejas. Formado em Ciências Biológicas na Escola Superior São Francisco de Assis/ES e com mestrado e doutorado em Biologia Animal pela UNESP-São José do Rio Preto. Realizou doutorado sanduíche na University of Guelph (Canadá) e pós-doutorado na UNICAMP. Atualmente é Professor Adjunto III no Departamento de Biologia da Universidade Federal Rural de Pernambuco, trabalhando nas linhas de pesquisa de ecologia de comunidades, ecologia funcional, macroecologia e metacomunidades.
+From Cachoeiro do Itapemirim/ES, father of Lucas, partner of Natália, practitioner of Muay Thai and boxing, and an enthusiast of beer tasting. He holds a degree in Biological Sciences from Escola Superior São Francisco de Assis/ES and an M.Sc. and Ph.D. in Animal Biology from UNESP–São José do Rio Preto. He completed a sandwich Ph.D. at the University of Guelph (Canada) and a postdoctoral fellowship at UNICAMP. He is currently an Assistant Professor III in the Department of Biology at the Federal Rural University of Pernambuco, working in community ecology, functional ecology, macroecology, and metacommunities.
 
 Site: https://thiagocalvesouza.wixsite.com/ecofun
 
@@ -26,7 +26,7 @@ Site: https://thiagocalvesouza.wixsite.com/ecofun
 knitr::include_graphics(path = "img/autores_gustavo.png")
 ```
 
-Compositor de cantigas e violeiro, nascido em Ribeirão Preto/SP, pai do Rudá e da Maria Flor, e apaixonado por Mila. Admira profundamente a incrível diversidade da vida na Terra. Gosta de trilha, música, skate, surf, fotografia de estrelas e programação. É Ecólogo com muito orgulho pela formação na UFRN/Natal, com mestrado e doutorado em Ecologia pela mesma universidade. Realizou sanduíche na Macquarie University (Austrália). Possui grande interesse em Ciência aberta e software livre e é embaixador do projeto Open Science Framework (OSF). Atualmente é pesquisador de pós-doutorado na Faculty of Forest Sciences and Forest Ecology da Universidade de Gottingen (Alemanha). Atua na interface entre ecologia evolutiva, biodiversidade-funcionamento de ecossistemas e ecologia da restauração.
+Composer of folk songs and a viola player, born in Ribeirão Preto/SP, father of Rudá and Maria Flor, and deeply passionate about Mila. He deeply admires the incredible diversity of life on Earth. He enjoys hiking, music, skateboarding, surfing, astrophotography, and programming. He is an ecologist by training, having earned his degree at UFRN (Natal), with an M.Sc. and Ph.D. in Ecology from the same institution. He completed a sandwich period at Macquarie University (Australia). He has a strong interest in open science and free software and is an ambassador of the Open Science Framework (OSF). He is currently a postdoctoral researcher at the Faculty of Forest Sciences and Forest Ecology at the University of Göttingen (Germany). His work lies at the interface of evolutionary ecology, biodiversity–ecosystem functioning, and restoration ecology.
 
 Site: https://gustavopaterno.netlify.app/
 
@@ -36,7 +36,7 @@ Site: https://gustavopaterno.netlify.app/
 knitr::include_graphics(path = "img/autores_diogo.jpg")
 ```
 
-Capixaba da gema, nascido em Bom Jesus do Norte/ES (na verdade registrado nessa cidade e nascido em Bom Jesus do Itabapoana/RJ do outro lado da ponte, porque no ES não tinha hospital :D ), pai orgulhoso da Manuela e esposo apaixonado da Lilian. Apreciador das boas Ale Belgas e Inglesas e vinhos Chilenos e Brasileiros. Já fui nadador, jogador de futebol, e um péssimo jogador de Xadrez. Dizem que gosto de livros e HQs. Graduado em Ciências Biológicas na Universidade Federal de Alfenas-MG, com mestrado em Biologia Animal na UNESP-São José do Rio Preto e Doutorado em Ecologia e Evolução na Universidade Federal de Goiás. Atualmente é Professor Adjunto I na Universidade Federal de Mato Grosso do Sul. Meu programa de pesquisa tenta integrar evolução fenotípica e processos micro- e macroevolutivos para entender padrões de distribuição de espécies em escala de metacomunidades, especialmente em ambientes de água doce.
+A true native of Espírito Santo, born in Bom Jesus do Norte/ES (actually registered there but born in Bom Jesus do Itabapoana/RJ, just across the bridge, because there was no hospital in ES :D), proud father of Manuela and devoted husband of Lilian. A fan of Belgian and English ales, as well as Chilean and Brazilian wines. He used to be a swimmer and a soccer player, and is a terrible chess player. Some say he enjoys books and comics. He holds a degree in Biological Sciences from the Federal University of Alfenas (MG), an M.Sc. in Animal Biology from UNESP–São José do Rio Preto, and a Ph.D. in Ecology and Evolution from the Federal University of Goiás. He is currently an Assistant Professor I at the Federal University of Mato Grosso do Sul. His research program seeks to integrate phenotypic evolution and micro- and macroevolutionary processes to understand patterns of species distribution at the metacommunity scale, especially in freshwater environments.
 
 Site: http://diogoprovete.weebly.com
 
@@ -46,6 +46,6 @@ Site: http://diogoprovete.weebly.com
 knitr::include_graphics(path = "img/autores_mauricio.jpg")
 ```
 
-Caipira do interior de Socorro/SP, pai do Dudu, companheiro da Japa, amante de música instrumental, livros, games, softwares livres, programação, uma boa cerveja, além de um dedo de cachaça e uma longa prosa. Mais recentemente tenta não levar muitos tombos ao aprender a andar de skate depois dos 30. Graduado em Ecologia e mestre em Zoologia, ambos pela UNESP-Rio Claro. Atualmente é Doutorando no PPG de Ecologia, Evolução e Biodiversidade da UNESP-Rio Claro e atua na linha de pesquisa de Ecologia Espacial, Ecologia da Paisagem, Modelagem Ecológica e Ecologia de Anfíbios.
+From the countryside of Socorro/SP, father of Dudu, partner of Japa, and a lover of instrumental music, books, games, free software, programming, good beer, as well as a shot of cachaça and long conversations. More recently, he has been trying not to fall too often while learning to skateboard after turning 30. He holds a degree in Ecology and an M.Sc. in Zoology, both from UNESP–Rio Claro. He is currently a Ph.D. candidate in the Graduate Program in Ecology, Evolution and Biodiversity at UNESP–Rio Claro, working in spatial ecology, landscape ecology, ecological modeling, and amphibian ecology.
 
 Site: https://mauriciovancine.github.io/

@@ -2,22 +2,22 @@ book_filename: "livro"
 output_dir: docs
 delete_merged_file: true
 download: [epub]
-edit: https://github.com/paternogbc/livro_aer/edit/master/%s
-view: https://github.com/paternogbc/livro_aer/blob/master/%s
+edit: https://github.com/mauriciovancine/book-ear/edit/master/%s
+view: https://github.com/mauriciovancine/book-ear/blob/master/%s
 before_chapter_script: "_common.R"
 language:
   label:
-    fig: "Figura "
-    tab: "Tabela "
+    fig: "Figure "
+    tab: "Table "
   ui:
-    chapter_name: "Capítulo "
+    chapter_name: "Chapter "
 
 rmd_files:
   - "index.Rmd"
   - "00_dedicatoria.Rmd"
   - "00_autores.Rmd"
   - "00_agradecimentos_revisores.Rmd"
-  # - "01_introducao.Rmd"
+  - "01_introducao.Rmd"
   # - "02_perguntas_ecologia.Rmd"
   # - "03_pre_requisitos.Rmd"
   # - "04_introducao_r.Rmd"
@@ -32,5 +32,5 @@ rmd_files:
   # - "13_diversidade_filogenetica.Rmd"
   # - "14_diversidade_funcional.Rmd"
   # - "15_geoespacial.Rmd"
-  # - "98_glossario.Rmd"
-  # - "99_referencias.Rmd"
+  - "98_glossario.Rmd"
+  - "99_referencias.Rmd"

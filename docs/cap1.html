@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 1 Introduction | Ecological Analyses in R</title>
+<meta name="author" content="Fernando Rodrigues da Silva, Thiago Gonçalves-Souza, Gustavo Brant Paterno,   Diogo Borges Provete, Maurício Humberto Vancine">
+<meta name="description" content="1.1 History of this book This book was structured based on the course material developed by researchers Diogo B. Provete, Fernando R. da Silva, and Thiago Gonçalves-Souza to teach the course...">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="Chapter 1 Introduction | Ecological Analyses in R">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://analises-ecologicas.netlify.app/cap1.html">
+<meta property="og:image" content="https://analises-ecologicas.netlify.app/img/capa.jpeg">
+<meta property="og:description" content="1.1 History of this book This book was structured based on the course material developed by researchers Diogo B. Provete, Fernando R. da Silva, and Thiago Gonçalves-Souza to teach the course...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 1 Introduction | Ecological Analyses in R">
+<meta name="twitter:description" content="1.1 History of this book This book was structured based on the course material developed by researchers Diogo B. Provete, Fernando R. da Silva, and Thiago Gonçalves-Souza to teach the course...">
+<meta name="twitter:image" content="https://analises-ecologicas.netlify.app/img/capa.jpeg">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.11.0/transition.js"></script><script src="libs/bs3compat-0.11.0/tabs.js"></script><script src="libs/bs3compat-0.11.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-23BB46Y290"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-23BB46Y290');
+    </script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="bs4_style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Ecological Analyses in R</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Procurar" aria-label="Procurar">
+</form>
+
+      <nav aria-label="Sumário"><h2><b>Sumário</b></h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welcome</a></li>
+<li><a class="" href="preface.html">Preface</a></li>
+<li><a class="" href="dedication.html">Dedication</a></li>
+<li><a class="" href="about-the-authors.html">About the Authors</a></li>
+<li><a class="" href="reviewers-and-contributors.html">Reviewers and Contributors</a></li>
+<li><a class="active" href="cap1.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="glossary.html">Glossary</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/paternogbc/livro_aer">Ver código fonte <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="cap1" class="section level1" number="1">
+<h1>
+<span class="header-section-number">1</span> Introduction<a class="anchor" aria-label="anchor" href="#cap1"><i class="fas fa-link"></i></a>
+</h1>
+<div id="history-of-this-book" class="section level2" number="1.1">
+<h2>
+<span class="header-section-number">1.1</span> History of this book<a class="anchor" aria-label="anchor" href="#history-of-this-book"><i class="fas fa-link"></i></a>
+</h2>
+<p>This book was structured based on the course material developed by researchers Diogo B. Provete, Fernando R. da Silva, and Thiago Gonçalves-Souza to teach the course <em>Statistics applied to ecology using R</em> in the Graduate Program in Animal Biology at UNESP (São José do Rio Preto, SP, Brazil) in April 2011. At that time, the three researchers were graduate students in the same program when they developed the material made available in the document <a href="https://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf">Statistics applied to ecology using R</a>. The idea of turning the material into a book had been a recurring topic since 2011, and it is now realized, a little over 10 years later.</p>
+<p>During this period, Diogo, Fernando, and Thiago were hired by the Federal University of Mato Grosso do Sul, the Federal University of São Carlos (Sorocaba campus), and the Federal Rural University of Pernambuco, respectively. Over these years, they offered different versions of the course <em>Statistics applied to ecology using R</em> to undergraduate and graduate students at various institutions in Brazil. The opportunity to teach these new courses strengthened the idea of transforming the material into a book based on their classroom experiences.</p>
+<p>Considering that new ecological approaches have been developed at a rapid pace in recent years, it was expected that the information in the original material would be outdated after a decade. For this reason, Diogo, Fernando, and Thiago invited two additional researchers, Gustavo B. Paterno from Georg-August University of Göttingen and Maurício H. Vancine from the Graduate Program in Ecology, Evolution and Biodiversity at UNESP (Rio Claro, SP, Brazil), both recognized for their expertise in applying statistics to ecology using R. With the full team assembled, they spent over a year holding meetings, sharing scripts, and, occasionally, paying for beers for coauthors with delayed chapters until reaching this first version of the book.</p>
+</div>
+<div id="objective-of-this-book" class="section level2" number="1.2">
+<h2>
+<span class="header-section-number">1.2</span> Objective of this book<a class="anchor" aria-label="anchor" href="#objective-of-this-book"><i class="fas fa-link"></i></a>
+</h2>
+<p>Our goal with this book is to provide content that can be used both by those who want to deepen their understanding of commonly used ecological analyses and by those with little or no quantitative background. To achieve this, we outline what we consider the best path between ecological questions and the most robust statistical methods to test them. Guiding your steps along this (not always linear) path requires a basic prerequisite: effort. Our effort, in turn, is to point out the best directions so that you can achieve a certain level of independence in ecological analyses.</p>
+<p>One of our objectives is to demonstrate that understanding ecological theory and formulating appropriate questions are the first steps toward grasping statistical reasoning. Do not let statistics become a “stone in your path.” In our view, programming-based environments enhance understanding of statistical logic, since each step must be coordinated—that is, lines of code must be understood for hypotheses to be properly tested. However, avoid copying scripts blindly without understanding each step of the analysis or visualization.</p>
+<p>The first part of this book adopts a strategy that facilitates choosing the appropriate statistical test by selecting clear questions/hypotheses and linking them to theory and method (see Figure <a href="#fig:fig-statistical-thinking"><strong>??</strong></a> in Chapter <a href="#cap2"><strong>??</strong></a>). It is essential to know where you want to go in order to decide what needs to be done. After defining your questions, you must translate the ecological context into a purely statistical one (null/alternative hypotheses). From there, we proceed to apply statistical tests (from generalized linear models to multivariate analyses) using the R language.</p>
+<p>Before detailing each statistical analysis, we present the basic functionality of R and the statistical distributions essential for understanding statistical tests. To support this, we organized a framework called the “logical structure,” which facilitates understanding the steps required to test hypotheses (see Figure <a href="#fig:fig-statistical-thinking"><strong>??</strong></a> in Chapter <a href="#cap2"><strong>??</strong></a>) <span class="citation">(<a href="references.html#ref-albuquerque_going_2019"><span class="nocase">Gonçalves-Souza et al.</span> 2019</a>)</span>.</p>
+</div>
+<div id="what-you-will-not-find-in-this-book" class="section level2" number="1.3">
+<h2>
+<span class="header-section-number">1.3</span> What you will not find in this book<a class="anchor" aria-label="anchor" href="#what-you-will-not-find-in-this-book"><i class="fas fa-link"></i></a>
+</h2>
+<p>In-depth theoretical discussions, mathematical details, and algorithmic explanations are not covered in this book. The focus is on explaining how each test works (basic theory and mathematical procedures) and its application to ecological problems using R scripts. We recommend that readers consult the books listed at the end of this chapter for deeper theoretical and practical understanding.</p>
+</div>
+<div id="why-use-r" class="section level2" number="1.4">
+<h2>
+<span class="header-section-number">1.4</span> Why use R?<a class="anchor" aria-label="anchor" href="#why-use-r"><i class="fas fa-link"></i></a>
+</h2>
+<p>The creators of R describe it as a language and environment for statistical computing and graphics <span class="citation">(<a href="references.html#ref-venables_modern_2002">Venables and Ripley 2002</a>)</span>. R is also an “object-oriented programming” language, meaning that its use involves creating and manipulating objects in a terminal, where the user must explicitly specify what the program should execute, rather than simply clicking buttons.</p>
+<p>One of the main advantages of using R is that the user has full control over what is happening and must understand what they want before performing an analysis. Additionally, R allows integration with programs written in Fortran, C++, Python, and Java, enabling users to apply new methodologies without learning entirely new languages.</p>
+<p>On the personal webpage of Prof. Nicolas J. Gotelli, there are several pieces of advice for beginning ecology students. Among them, he highlights that mastering a programming language is one of the most important skills, as it provides ecologists with the freedom to perform tasks beyond those available in commercial statistical packages. Furthermore, most new analyses published in leading ecology journals are implemented in R, and authors often provide source code as supplementary material, making analyses accessible and reproducible.</p>
+<p>The use of R in ecology has grown substantially over the past two decades. In a review study, Lai et al. <span class="citation">(<a href="references.html#ref-lai_evaluating_2019">2019</a>)</span> analyzed over 60,000 peer-reviewed articles published in 30 ecology journals over a 10-year period. The proportion of studies using R increased from 11.4% in 2008 to 58.0% in 2017. The most frequently used packages included <code>lme4</code>, <code>vegan</code>, <code>nlme</code>, <code>ape</code>, <code>MuMIn</code>, <code>MASS</code>, <code>mgcv</code>, <code>ade4</code>, <code>multcomp</code>, and <code>car</code>. The authors argue that the growing popularity of R has promoted open science by improving reproducibility and workflow transparency.</p>
+<p>Finally, because R is free software, citing it in scientific publications is allowed and encouraged. To learn how to cite R, type <code><a href="https://rdrr.io/r/utils/citation.html">citation()</a></code> in the command line. To cite a specific package, use <code>citation("package_name")</code>. More details on citations can be found in Chapter <a href="#cap4"><strong>??</strong></a>. While learning R may be challenging at first, the long-term benefits make the effort worthwhile.</p>
+</div>
+<div id="going-beyond-programming-in-ecology" class="section level2" number="1.5">
+<h2>
+<span class="header-section-number">1.5</span> Going beyond programming in ecology<a class="anchor" aria-label="anchor" href="#going-beyond-programming-in-ecology"><i class="fas fa-link"></i></a>
+</h2>
+<p>A common difficulty highlighted by all authors during the development of this book was:</p>
+<ol style="list-style-type: decimal">
+<li>How to translate objectives (data manipulation, analyses, and plots) into R code<br>
+</li>
+<li>How to interpret statistical results in an ecological context</li>
+</ol>
+<p>Initially, structuring code to perform desired tasks—importing data, selecting variables, choosing appropriate functions—can be challenging. There is no easy solution; it requires practice and familiarity over time. One useful strategy is to plan your code beforehand: write down the steps you intend to perform as if explaining them to someone else, then translate them into a script, and finally into R code.</p>
+<p>Once this barrier is overcome and you begin obtaining outputs (statistics, p-values, R², plots), the next challenge is interpretation. While generating results becomes easier with experience, understanding their ecological meaning is more complex. This difficulty often arises from limited theoretical or scientific experience. Interpreting patterns based on processes and mechanisms is a fundamental aspect of scientific thinking.</p>
+</div>
+<div id="how-to-use-this-book" class="section level2" number="1.6">
+<h2>
+<span class="header-section-number">1.6</span> How to use this book<a class="anchor" aria-label="anchor" href="#how-to-use-this-book"><i class="fas fa-link"></i></a>
+</h2>
+<p>Each chapter is independent. You can use the book in two ways:</p>
+<ul>
+<li>Follow a sequential order (recommended for beginners in R)<br>
+</li>
+<li>Select specific chapters based on your analytical needs</li>
+</ul>
+<p>Except for Chapters 2, 3, 4, 5, 6, and 15, all others follow a consistent structure: theoretical explanation, ecological examples, and exercises. Each example includes:</p>
+<ol style="list-style-type: decimal">
+<li>Description of the data<br>
+</li>
+<li>Research question and prediction<br>
+</li>
+<li>Description of response and predictor variables<br>
+</li>
+<li>Explanation of R code</li>
+</ol>
+<p>We recommend starting with the examples, then completing exercises, and finally applying the methods to your own data.</p>
+<div class="alert alert-info">
+<p><strong> 📝 Important </strong><br>
+Many metrics and indices are not translated into Portuguese because their acronyms are widely established in ecological literature. Translating them could create confusion. Additionally, we retain English outputs in some plots (Chapters 7–15), especially diagnostic plots, to maintain consistency with R outputs.</p>
+</div>
+<p>We emphasize that this book does not cover all available methods or packages, but it aims to provide enough foundation for readers to independently explore new tools.</p>
+</div>
+<div id="how-to-teach-and-learn-with-this-book" class="section level2" number="1.7">
+<h2>
+<span class="header-section-number">1.7</span> How to teach and learn with this book<a class="anchor" aria-label="anchor" href="#how-to-teach-and-learn-with-this-book"><i class="fas fa-link"></i></a>
+</h2>
+<p>Study groups are an effective way to learn. Below are suggested formats:</p>
+<div id="in-research-groups" class="section level3" number="1.7.1">
+<h3>
+<span class="header-section-number">1.7.1</span> In research groups<a class="anchor" aria-label="anchor" href="#in-research-groups"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Random leader</strong></p>
+<p>Each chapter is assigned randomly to a member responsible for studying and presenting it.</p>
+<p><strong>Specialist leader I (students)</strong></p>
+<p>Each chapter is led by the member most familiar with the topic.</p>
+<p><strong>Specialist leader II (advisor/postdoc)</strong></p>
+<p>An advisor selects chapters and guides discussions with students.</p>
+<p><strong>Specialist leader integrated with theory</strong></p>
+<p>Combines statistical methods with ecological theory (e.g., regression + island biogeography).</p>
+</div>
+<div id="in-undergraduate-or-graduate-courses" class="section level3" number="1.7.2">
+<h3>
+<span class="header-section-number">1.7.2</span> In undergraduate or graduate courses<a class="anchor" aria-label="anchor" href="#in-undergraduate-or-graduate-courses"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Flipped classroom</strong></p>
+<p>Students prepare and present chapters before lectures.</p>
+<p><strong>Traditional classroom</strong></p>
+<p>Instructor uses the book as primary teaching material.</p>
+</div>
+</div>
+<div id="recommended-books-for-further-study" class="section level2" number="1.8">
+<h2>
+<span class="header-section-number">1.8</span> Recommended books for further study<a class="anchor" aria-label="anchor" href="#recommended-books-for-further-study"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Hands-On Programming with R (Grolemund 2014)</strong> – Practical introduction to programming in R<br>
+</li>
+<li>
+<strong>R for Data Science (Wickham &amp; Grolemund 2017)</strong> – Core reference for <em>tidyverse</em> and data science<br>
+</li>
+<li>
+<strong>A Primer of Ecological Statistics (Gotelli &amp; Ellison 2012)</strong> – Foundations of ecological statistics<br>
+</li>
+<li>
+<strong>Experimental Design and Data Analysis for Biologists (Quinn &amp; Keough 2002)</strong><br>
+</li>
+<li>
+<strong>The R Book (Crawley 2012)</strong><br>
+</li>
+<li>
+<strong>Numerical Ecology (Legendre &amp; Legendre 2012)</strong><br>
+</li>
+<li>
+<strong>Biological Diversity (Magurran &amp; McGill 2012)</strong><br>
+</li>
+<li>
+<strong>Mixed Effects Models in Ecology with R (Zuur et al. 2009)</strong><br>
+</li>
+<li><strong>Geocomputation with R (Lovelace et al. 2020)</strong></li>
+</ul>
+<p>Additional recommended readings include works by Manly, Pinheiro, Scheiner, Burnham, Venables, Zar, Zuur, James, Fox, Thioulouse, and Touchon.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="reviewers-and-contributors.html">Reviewers and Contributors</a></div>
+<div class="next"><a href="glossary.html">Glossary</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="Nesta página"><h2><b>Nesta página</b></h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#cap1"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="nav-link" href="#history-of-this-book"><span class="header-section-number">1.1</span> History of this book</a></li>
+<li><a class="nav-link" href="#objective-of-this-book"><span class="header-section-number">1.2</span> Objective of this book</a></li>
+<li><a class="nav-link" href="#what-you-will-not-find-in-this-book"><span class="header-section-number">1.3</span> What you will not find in this book</a></li>
+<li><a class="nav-link" href="#why-use-r"><span class="header-section-number">1.4</span> Why use R?</a></li>
+<li><a class="nav-link" href="#going-beyond-programming-in-ecology"><span class="header-section-number">1.5</span> Going beyond programming in ecology</a></li>
+<li><a class="nav-link" href="#how-to-use-this-book"><span class="header-section-number">1.6</span> How to use this book</a></li>
+<li>
+<a class="nav-link" href="#how-to-teach-and-learn-with-this-book"><span class="header-section-number">1.7</span> How to teach and learn with this book</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#in-research-groups"><span class="header-section-number">1.7.1</span> In research groups</a></li>
+<li><a class="nav-link" href="#in-undergraduate-or-graduate-courses"><span class="header-section-number">1.7.2</span> In undergraduate or graduate courses</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#recommended-books-for-further-study"><span class="header-section-number">1.8</span> Recommended books for further study</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/paternogbc/livro_aer/blob/master/01_introducao.Rmd">Ver fonte <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/paternogbc/livro_aer/edit/master/01_introducao.Rmd">Editar esta página <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Ecological Analyses in R</strong>" foi escrito por Fernando Rodrigues da Silva, Thiago Gonçalves-Souza, Gustavo Brant Paterno, <br> Diogo Borges Provete, Maurício Humberto Vancine. Última atualização 2026-05-25.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>Este livro foi compilado com o pacote R <a class="text-light" href="https://bookdown.org">bookdown</a>.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+cap1
+history-of-this-book
+objective-of-this-book
+what-you-will-not-find-in-this-book
+why-use-r
+going-beyond-programming-in-ecology
+how-to-use-this-book
+how-to-teach-and-learn-with-this-book
+in-research-groups
+in-undergraduate-or-graduate-courses
+recommended-books-for-further-study

@@ -1,0 +1,115 @@
+# Introduction {#cap1}
+
+## History of this book
+
+This book was structured based on the course material developed by researchers Diogo B. Provete, Fernando R. da Silva, and Thiago Gonçalves-Souza to teach the course *Statistics applied to ecology using R* in the Graduate Program in Animal Biology at UNESP (São José do Rio Preto, SP, Brazil) in April 2011. At that time, the three researchers were graduate students in the same program when they developed the material made available in the document [Statistics applied to ecology using R](https://cran.r-project.org/doc/contrib/Provete-Estatistica_aplicada.pdf). The idea of turning the material into a book had been a recurring topic since 2011, and it is now realized, a little over 10 years later.
+
+During this period, Diogo, Fernando, and Thiago were hired by the Federal University of Mato Grosso do Sul, the Federal University of São Carlos (Sorocaba campus), and the Federal Rural University of Pernambuco, respectively. Over these years, they offered different versions of the course *Statistics applied to ecology using R* to undergraduate and graduate students at various institutions in Brazil. The opportunity to teach these new courses strengthened the idea of transforming the material into a book based on their classroom experiences.
+
+Considering that new ecological approaches have been developed at a rapid pace in recent years, it was expected that the information in the original material would be outdated after a decade. For this reason, Diogo, Fernando, and Thiago invited two additional researchers, Gustavo B. Paterno from Georg-August University of Göttingen and Maurício H. Vancine from the Graduate Program in Ecology, Evolution and Biodiversity at UNESP (Rio Claro, SP, Brazil), both recognized for their expertise in applying statistics to ecology using R. With the full team assembled, they spent over a year holding meetings, sharing scripts, and, occasionally, paying for beers for coauthors with delayed chapters until reaching this first version of the book.
+
+## Objective of this book
+
+Our goal with this book is to provide content that can be used both by those who want to deepen their understanding of commonly used ecological analyses and by those with little or no quantitative background. To achieve this, we outline what we consider the best path between ecological questions and the most robust statistical methods to test them. Guiding your steps along this (not always linear) path requires a basic prerequisite: effort. Our effort, in turn, is to point out the best directions so that you can achieve a certain level of independence in ecological analyses.
+
+One of our objectives is to demonstrate that understanding ecological theory and formulating appropriate questions are the first steps toward grasping statistical reasoning. Do not let statistics become a "stone in your path." In our view, programming-based environments enhance understanding of statistical logic, since each step must be coordinated—that is, lines of code must be understood for hypotheses to be properly tested. However, avoid copying scripts blindly without understanding each step of the analysis or visualization.
+
+The first part of this book adopts a strategy that facilitates choosing the appropriate statistical test by selecting clear questions/hypotheses and linking them to theory and method (see Figure \@ref(fig:fig-statistical-thinking) in Chapter \@ref(cap2)). It is essential to know where you want to go in order to decide what needs to be done. After defining your questions, you must translate the ecological context into a purely statistical one (null/alternative hypotheses). From there, we proceed to apply statistical tests (from generalized linear models to multivariate analyses) using the R language.
+
+Before detailing each statistical analysis, we present the basic functionality of R and the statistical distributions essential for understanding statistical tests. To support this, we organized a framework called the "logical structure," which facilitates understanding the steps required to test hypotheses (see Figure \@ref(fig:fig-statistical-thinking) in Chapter \@ref(cap2)) [@albuquerque_going_2019].
+
+## What you will not find in this book
+
+In-depth theoretical discussions, mathematical details, and algorithmic explanations are not covered in this book. The focus is on explaining how each test works (basic theory and mathematical procedures) and its application to ecological problems using R scripts. We recommend that readers consult the books listed at the end of this chapter for deeper theoretical and practical understanding.
+
+## Why use R?
+
+The creators of R describe it as a language and environment for statistical computing and graphics [@venables_modern_2002]. R is also an "object-oriented programming" language, meaning that its use involves creating and manipulating objects in a terminal, where the user must explicitly specify what the program should execute, rather than simply clicking buttons.
+
+One of the main advantages of using R is that the user has full control over what is happening and must understand what they want before performing an analysis. Additionally, R allows integration with programs written in Fortran, C++, Python, and Java, enabling users to apply new methodologies without learning entirely new languages.
+
+On the personal webpage of Prof. Nicolas J. Gotelli, there are several pieces of advice for beginning ecology students. Among them, he highlights that mastering a programming language is one of the most important skills, as it provides ecologists with the freedom to perform tasks beyond those available in commercial statistical packages. Furthermore, most new analyses published in leading ecology journals are implemented in R, and authors often provide source code as supplementary material, making analyses accessible and reproducible.
+
+The use of R in ecology has grown substantially over the past two decades. In a review study, Lai et al. [-@lai_evaluating_2019] analyzed over 60,000 peer-reviewed articles published in 30 ecology journals over a 10-year period. The proportion of studies using R increased from 11.4% in 2008 to 58.0% in 2017. The most frequently used packages included `lme4`, `vegan`, `nlme`, `ape`, `MuMIn`, `MASS`, `mgcv`, `ade4`, `multcomp`, and `car`. The authors argue that the growing popularity of R has promoted open science by improving reproducibility and workflow transparency.
+
+Finally, because R is free software, citing it in scientific publications is allowed and encouraged. To learn how to cite R, type `citation()` in the command line. To cite a specific package, use `citation("package_name")`. More details on citations can be found in Chapter \@ref(cap4). While learning R may be challenging at first, the long-term benefits make the effort worthwhile.
+
+## Going beyond programming in ecology
+
+A common difficulty highlighted by all authors during the development of this book was:
+
+1. How to translate objectives (data manipulation, analyses, and plots) into R code  
+2. How to interpret statistical results in an ecological context  
+
+Initially, structuring code to perform desired tasks—importing data, selecting variables, choosing appropriate functions—can be challenging. There is no easy solution; it requires practice and familiarity over time. One useful strategy is to plan your code beforehand: write down the steps you intend to perform as if explaining them to someone else, then translate them into a script, and finally into R code.
+
+Once this barrier is overcome and you begin obtaining outputs (statistics, p-values, R², plots), the next challenge is interpretation. While generating results becomes easier with experience, understanding their ecological meaning is more complex. This difficulty often arises from limited theoretical or scientific experience. Interpreting patterns based on processes and mechanisms is a fundamental aspect of scientific thinking.
+
+## How to use this book
+
+Each chapter is independent. You can use the book in two ways:
+
+- Follow a sequential order (recommended for beginners in R)  
+- Select specific chapters based on your analytical needs  
+
+Except for Chapters 2, 3, 4, 5, 6, and 15, all others follow a consistent structure: theoretical explanation, ecological examples, and exercises. Each example includes:
+
+1. Description of the data  
+2. Research question and prediction  
+3. Description of response and predictor variables  
+4. Explanation of R code  
+
+We recommend starting with the examples, then completing exercises, and finally applying the methods to your own data.
+
+::: {.alert .alert-info}
+<strong> 📝 Important </strong>\
+Many metrics and indices are not translated into Portuguese because their acronyms are widely established in ecological literature. Translating them could create confusion. Additionally, we retain English outputs in some plots (Chapters 7–15), especially diagnostic plots, to maintain consistency with R outputs.
+:::
+
+We emphasize that this book does not cover all available methods or packages, but it aims to provide enough foundation for readers to independently explore new tools.
+
+## How to teach and learn with this book
+
+Study groups are an effective way to learn. Below are suggested formats:
+
+### In research groups
+
+**Random leader**
+
+Each chapter is assigned randomly to a member responsible for studying and presenting it.
+
+**Specialist leader I (students)**
+
+Each chapter is led by the member most familiar with the topic.
+
+**Specialist leader II (advisor/postdoc)**
+
+An advisor selects chapters and guides discussions with students.
+
+**Specialist leader integrated with theory**
+
+Combines statistical methods with ecological theory (e.g., regression + island biogeography).
+
+### In undergraduate or graduate courses
+
+**Flipped classroom**
+
+Students prepare and present chapters before lectures.
+
+**Traditional classroom**
+
+Instructor uses the book as primary teaching material.
+
+## Recommended books for further study
+
+- **Hands-On Programming with R (Grolemund 2014)** – Practical introduction to programming in R  
+- **R for Data Science (Wickham & Grolemund 2017)** – Core reference for *tidyverse* and data science  
+- **A Primer of Ecological Statistics (Gotelli & Ellison 2012)** – Foundations of ecological statistics  
+- **Experimental Design and Data Analysis for Biologists (Quinn & Keough 2002)**  
+- **The R Book (Crawley 2012)**  
+- **Numerical Ecology (Legendre & Legendre 2012)**  
+- **Biological Diversity (Magurran & McGill 2012)**  
+- **Mixed Effects Models in Ecology with R (Zuur et al. 2009)**  
+- **Geocomputation with R (Lovelace et al. 2020)**  
+
+Additional recommended readings include works by Manly, Pinheiro, Scheiner, Burnham, Venables, Zar, Zuur, James, Fox, Thioulouse, and Touchon.

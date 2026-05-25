@@ -1,3 +1,3 @@
-# Dedicatória {-}
+# Dedication {-}
 
-Dedicamos esse livro às nossas companheiras que nos apoiaram durante o longo processo de construção do livro, e aos nossos filhos e filhas pelas distrações e alegrias quando estávamos longe dos infinitos erros durante as compilações.
+We dedicate this book to our partners, who supported us throughout the long process of building this book, and to our sons and daughters for the distractions and joy when we were away from the endless errors during compilations.

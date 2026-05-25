@@ -1,20 +1,20 @@
-# Análises Ecológicas no R | Livro
+# Ecological Analyses in R | Book
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/86753a17-4b6a-4ec1-9f71-311660ca0158/deploy-status)](https://app.netlify.com/sites/analises-ecologicas/deploys)
 
-| Este livro oferece uma introdução compreensiva aos métodos estatísticos mais utilizados em Ecologia. 
+| This book provides a comprehensive introduction to the most commonly used statistical methods in Ecology.
 
-![analises ecologicas](img/capa.jpeg)
+![ecological analyses](img/capa.jpeg)
 
-A versão online do livro está disponível [aqui](https://analises-ecologicas.netlify.app/).
+The online version of the book is available [here](https://analises-ecologicas.netlify.app/).
 
-Neste repositório você encontra o **código fonte** necessário para reproduzir todo o conteúdo do livro.
+In this repository you will find the **source code** required to reproduce all the content of the book.
 
-# Código de Conduta
+# Code of Conduct
 
-O repositório Análises Ecológicas no R possui um [Código de Conduta do Contribuinte](https://www.contributor-covenant.org/pt-br/version/2/0/code_of_conduct/). Ao contribuir para este livro, você concorda em respeitar os seus termos.
+The Ecological Analyses in R repository has a [Contributor Code of Conduct](https://www.contributor-covenant.org/pt-br/version/2/0/code_of_conduct/). By contributing to this book, you agree to abide by its terms.
 
 *** 
-- *Este repositório foi originalmente clonado a partir do template disponível aqui: https://github.com/jtr13/bookdown-template.*  
+- *This repository was originally cloned from the template available here: https://github.com/jtr13/bookdown-template.*  
 - *This repo was initially generated from a bookdown template available here: https://github.com/jtr13/bookdown-template.* 
-- *O site do livro Análises Ecológicas no R é hospedado por https://www.netlify.com como parte do seu apoio ao software e comunidades de código aberto*.
+- *The Ecological Analyses in R website is hosted by https://www.netlify.com as part of its support for open-source software and communities.*
