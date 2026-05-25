@@ -1,0 +1,35 @@
+bookdown::gitbook:
+  pandoc_args: [ "--csl", "acta-botanica-croatica.csl"]
+  includes:
+    in_header: GA.html
+  config:
+    toc:
+      collapse: subsection
+      before: |
+        <li><a href="./">Análises Ecológicas no R</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    sharing:
+      github: yes
+      facebook: yes
+  params:
+    run_page_ind: FALSE
+  self_contained: no
+    
+bookdown::pdf_document2: 
+  pandoc_args: [ "--csl", "acta-botanica-croatica.csl" ]
+
+bookdown::word_document2: 
+  pandoc_args: [ "--csl", "acta-botanica-croatica.csl" ]
+  highlight: kate
+
+bookdown::epub_book: 
+  pandoc_args: [ "--csl", "acta-botanica-croatica.csl" ]
+
+bookdown::bs4_book:
+  includes:
+    in_header: GA.html
+  css: bs4_style.css
+  theme:
+    primary: "#096B72"
+  repo: https://github.com/paternogbc/livro_aer
