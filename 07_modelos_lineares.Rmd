@@ -319,8 +319,11 @@ Cálculo do Teste T com amostras pareadas.
 
 ```{r}
 ## Análise Teste T Pareado
-
-t.test(Riqueza ~ Estado, paired = TRUE, data = Pareado)
+t.test(
+  x = Pareado$Riqueza[Pareado$Estado == "Pre-Queimada"],
+  y = Pareado$Riqueza[Pareado$Estado == "Pos-Queimada"],
+  paired = TRUE
+)
 ```
 
 Neste exemplo, rejeitamos a hipótese nula de que a riqueza de espécies de artrópodes é igual antes e depois da queimada (t~26~ = 7,57, P \< 0,001).

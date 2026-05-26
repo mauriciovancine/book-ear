@@ -238,7 +238,7 @@ Visualizar os resultados (Figura \@ref(fig:fig-rare-amos-morcegos)).
 
 ```{r fig-rare-amos-morcegos, fig.cap="Curvas de rarefação baseada em amostras de morcegos."}
 ## Gráfico
-ggiNEXT(res_rarefacao_amostras , type = 1, color.var = "site") + 
+ggiNEXT(res_rarefacao_amostras, type = 1, color.var = "Assemblage") + 
     geom_vline(xintercept = 12, lty = 2) +
     scale_linetype_discrete(name = "Método", labels = c("Interpolado", "Extrapolado")) +
     scale_colour_manual(values = c("darkorange", "darkorchid", "cyan4")) +
@@ -266,7 +266,7 @@ Os códigos para a realização da rarefação *coverage-based* são idênticos 
 ```{r fig-rare-cover-morcegos, fig.cap="Curvas de rarefação baseada coverage-based de morcegos."}
 ## Gráfico
 # Visualizar os resultados da rarefação *coverage-based*. 
-ggiNEXT(res_rarefacao_amostras, type = 3, color.var = "site") + 
+ggiNEXT(res_rarefacao_amostras, type = 3, color.var = "Assemblage") + 
     geom_vline(xintercept = 0.937, lty = 2) +
     scale_linetype_discrete(labels = c("Interpolado", "Extrapolado")) +
     scale_colour_manual(values = c("darkorange", "darkorchid", "cyan4")) +
